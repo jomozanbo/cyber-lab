@@ -1,0 +1,97 @@
+﻿# ================================================================
+#  .gitignore — CYBER_LAB
+# ================================================================
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Données sensibles
+*.env
+.env*
+secrets.txt
+api_keys.txt
+credentials.*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Images de machines virtuelles
+*.vmdk
+*.ova
+*.vdi
+*.vhd
+*.vhdx
+*.iso
+*.qcow2
+*.raw
+*.img
+
+# Captures réseau
+*.pcap
+*.pcapng
+*.cap
+
+# Samples de malwares — JAMAIS sur GitHub
+MALWARE_ANALYSIS/SAMPLES/**
+*.malware
+*.vir
+*.infected
+
+# Dumps mémoire
+*.dmp
+*.raw
+*.mem
+FORENSICS/MEMORY/DUMPS/**
+FORENSICS/DISK/IMAGES/**
+
+# Fichiers GNS3
+*.gns3project
+
+# Fichiers Burp Suite
+*.burp
+
+# Fichiers IDA
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+
+# Wordlists volumineuses
+TOOLS/UTILS/WORDLISTS/rockyou*
+*.wordlist
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Logs
+*.log
+logs/
+
+# Archives temporaires
+*.tmp
+*.bak
+*.swp
+~*
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+
+# Ansible
+*.vault
+ansible/vault_pass.txt
