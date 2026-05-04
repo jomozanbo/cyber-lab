@@ -1,14 +1,10 @@
-﻿# ================================================================
-#  .gitignore — CYBER_LAB
-# ================================================================
-
-# Fichiers système
+﻿# Fichiers systeme
 .DS_Store
 Thumbs.db
 desktop.ini
 *.lnk
 
-# Données sensibles
+# Donnees sensibles
 *.env
 .env*
 secrets.txt
@@ -19,7 +15,7 @@ credentials.*
 *.p12
 *.pfx
 
-# Images de machines virtuelles
+# Images VM (trop lourdes pour Git)
 *.vmdk
 *.ova
 *.vdi
@@ -30,36 +26,25 @@ credentials.*
 *.raw
 *.img
 
-# Captures réseau
+# Captures reseau
 *.pcap
 *.pcapng
 *.cap
 
-# Samples de malwares — JAMAIS sur GitHub
+# Samples malwares - JAMAIS sur GitHub
 MALWARE_ANALYSIS/SAMPLES/**
 *.malware
 *.vir
 *.infected
 
-# Dumps mémoire
+# Dumps memoire
 *.dmp
-*.raw
 *.mem
 FORENSICS/MEMORY/DUMPS/**
 FORENSICS/DISK/IMAGES/**
 
-# Fichiers GNS3
-*.gns3project
-
-# Fichiers Burp Suite
+# Burp Suite
 *.burp
-
-# Fichiers IDA
-*.id0
-*.id1
-*.id2
-*.nam
-*.til
 
 # Wordlists volumineuses
 TOOLS/UTILS/WORDLISTS/rockyou*
@@ -80,11 +65,10 @@ npm-debug.log*
 *.log
 logs/
 
-# Archives temporaires
+# Temporaires
 *.tmp
 *.bak
 *.swp
-~*
 
 # Terraform
 .terraform/
